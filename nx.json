@@ -1,48 +1,29 @@
 {
   "npmScope": "test-13-staging",
-  "affected": {
-    "defaultBase": "main"
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
+  "affected": { "defaultBase": "main" },
+  "cli": { "defaultCollection": "@nrwl/react" },
   "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     ".eslintrc.json": "*"
   },
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "MGI5OWVjMWYtN2U1OC00NWEwLThmMjEtOWRmODI2ZjhmZDZkfHJlYWQtd3JpdGU=",
+        "nxCloudUrl": "https://staging.nx.app"
       }
     }
   },
   "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
+    "build": [{ "target": "build", "projects": "dependencies" }]
   },
   "generators": {
     "@nrwl/react": {
-      "application": {
-        "style": "css",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint"
-      }
+      "application": { "style": "css", "linter": "eslint", "babel": true },
+      "component": { "style": "css" },
+      "library": { "style": "css", "linter": "eslint" }
     }
   },
   "defaultProject": "test-13-staging"
