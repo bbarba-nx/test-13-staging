@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "test-13-staging": "apps/test-13-staging",
+    "test-13-staging-e2e": "apps/test-13-staging-e2e"
+  }
+}
